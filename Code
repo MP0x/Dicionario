@@ -1,0 +1,23 @@
+pessoa = {}
+
+pessoa["nome"] = input('Digite seu nome: ').upper().strip()
+pessoa["média"] = float(input(f'Digite a média de {pessoa["nome"]}: '))
+
+if pessoa["média"] >= 7:
+    pessoa['situação'] = 'APROVADO'
+elif pessoa['média'] >=5 and pessoa['média'] < 7:
+    pessoa['situação'] = 'RECUPERAÇÃO'
+else:
+    pessoa['situação'] = 'REPROVADO'
+
+print('=*'*30)
+#Primeira Opção
+print(f'{"-":>2} nome é igual a {pessoa["nome"]} ')
+print(f'{"-":>2} média é igual a {pessoa["média"]} ')
+print(f'{"-":>2} situação é igual a {pessoa["situação"]} ')
+print()
+print('Isso é tudo pessoal!'.title())
+
+#Segunda Opção
+#for k, v in aluno.items():
+#print(f'   - {k} é igual a {v}')
